@@ -1,49 +1,8 @@
+{% extends 'alewebs/base.html' %}
 {% load static %}
 
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V"
-      crossorigin="anonymous"
-    />
-
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href=" {% static '/css/style.css' %}"
-    />
-
-    <!-- font style -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
-    <!-- end font style -->
-
-    <title>Alessia Carrano</title>
-  </head>
-  <body>
-    <div class="navbar">
-      <div class="container flex">
-        <h3 class="logo">acCo</h3>
-        <nav>
-          <ul>
-
-            <li><a href="/alewebs/templates/alewebs/index.html">Home</a></li>
-            <li><a href="/alewebs/templates/alewebsabout.html">About</a></li>
-            <li><a href="/alewebs/templates/alewebs/price.html">Price</a></li>
-
-          </ul>
-        </nav>
-      </div>
-    </div>
-
-    <!--Showcase-->
+{% block content %}
+      <!--Showcase-->
     <section class="showcase">
       <div class="container grid-1">
         <div class="showcase-text">
@@ -159,5 +118,4 @@
         <p>copyright@2021</p>
       </div>
     </section>
-  </body>
-</html>
+{% endblock content %}

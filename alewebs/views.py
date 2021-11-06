@@ -6,7 +6,6 @@ def index(request):
     return render(request, 'alewebs/index.html')
 
 def features(request):
-
 	return render(request, 'alewebs/features.html')
 
 def about(request):
