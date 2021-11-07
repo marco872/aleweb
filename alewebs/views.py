@@ -6,17 +6,15 @@ def index(request):
     return render(request, 'alewebs/index.html')
 
 def features(request):
-
-	return render(request, 'alewebs/features.html')
+		return render(request, 'alewebs/features.html')
 
 def about(request):
-	return render(request, 'alewebs/about.html')
+		return render(request, 'alewebs/about.html')
 
 def price(request):
-	return render(request, 'alewebs/price.html')
+		return render(request, 'alewebs/price.html')
 
-
-
-
+def how(request):
+		return render(request, 'alewebs/how.html')
 
 

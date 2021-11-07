@@ -1,49 +1,8 @@
 
-{% load static %}
+{% extends 'alewebs/base.html' %}
 
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V"
-      crossorigin="anonymous"
-    />
-
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href=" {% static '/css/style.css' %}"
-    />
-    <link rel="stylesheet" href="/static/images/styles.css" />
-    <!-- font style -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-   
-    <!-- end font style -->
-
-    <title>Alessia Carrano</title>
-  </head>
-  <body>
-    <div class="navbar">
-      <div class="container flex">
-        <h3 class="logo">acCo</h3>
-        <nav>
-          <ul>
-             <li><a href="/alewebs/templates/alewebs/index.html">Home</a></li>
-              <li><a href="/alewebs/templates/alewebsabout.html">About</a></li>
-              <li><a href="/alewebs/templates/alewebs/price.html">Price</a></li>
-          </ul>
-        </nav>
-      </div>
-    </div>
-
-
-    <section class="about">
+{% block content %}
+<section class="about">
       <div class="container grid-3">
         <div class="about-text">
           <h3 style="color:violet; margin-top: 60px;">about alessia carrano</h3>
@@ -68,17 +27,8 @@
       </div>
       
     </section>
-                  
-                  
-                  
-                 
-
-
-   
-    
-    
-    
-    
-   
-  </body>
-</html>
+{% endblock content %}
+© 2021 GitHub, Inc.
+Terms
+Privacy
+Security
